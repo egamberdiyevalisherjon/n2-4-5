@@ -1,0 +1,20 @@
+.burger {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.burger * {
+  position: relative;
+}
+.burger *:not(.bread) {
+  margin-top: -120px;
+}
+.burger .cheese {
+  margin-top: -60px;
+  margin-bottom: -60px;
+}
+.burger .salad {
+  margin-top: -100px;
+}
+.burger .pickle {
+  margin-bottom: -40px;
+}/*# sourceMappingURL=main.css.map */

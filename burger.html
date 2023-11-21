@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles/css/minified/main.min.css" />
+    <title>Burger Time</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row min-vh-100 align-items-center">
+        <div class="col-md-6">
+          <div class="burger">
+            <img
+              class="bread bottom"
+              src="./burger-layers/bottom-bread.svg"
+              alt=""
+            />
+            <img class="bread top" src="./burger-layers/top-bread.svg" alt="" />
+          </div>
+        </div>
+        <div class="col-md-6">
+          <ul class="ingredients list-group">
+            <li class="list-group-item">Bread - $2</li>
+            <li class="list-group-item">Cheese - $2</li>
+            <li class="list-group-item">Meat - $5</li>
+            <li class="list-group-item">Onion - $1</li>
+            <li class="list-group-item">Tomato - $1</li>
+            <li class="list-group-item">Pickle - $1</li>
+            <li class="list-group-item">Salad - $1</li>
+          </ul>
+          <div class="layer-btns my-5 d-flex justify-content-between">
+            <button class="btn btn-primary" data-layer="cheese">Cheese</button>
+            <button class="btn btn-primary" data-layer="meat">Meat</button>
+            <button class="btn btn-primary" data-layer="onion">Onion</button>
+            <button class="btn btn-primary" data-layer="tomato">Tomato</button>
+            <button class="btn btn-primary" data-layer="pickle">Pickle</button>
+            <button class="btn btn-primary" data-layer="salad">Salad</button>
+          </div>
+          <div class="text-bg-light p-5 border border-dark rounded-3">
+            <div class="row align-items-end">
+              <div class="col-md-8">
+                <h3>Total: $<span class="total">2</span></h3>
+
+                <button class="btn btn-success order-btn">Order Now</button>
+              </div>
+              <div class="col-md-4">
+                <a href="/pages/order-history.html" class="btn btn-info">
+                  Order History
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/burger.js"></script>
+  </body>
+</html>
